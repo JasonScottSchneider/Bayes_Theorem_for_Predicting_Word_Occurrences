@@ -1,6 +1,40 @@
-//Bayes Theorem for Predicting Word Occurrences
-//author: Jason Schneider
-//date: Jun 5, 2021
+/*
+Bayes Theorem for Predicting Word Occurrences v.1.0
+author: Jason Schneider
+date: Jun 5, 2021
+
+
+This is more of a corpus linguistics issue, but I am trying to find the probability of "small" occurring after the indefinite determiner "a" in "A small dog jumped over the fence. The dog used its small paws to jump over the fence. The fence was no challenge. A small man had a llama, but the tall woman had a small alpaca."
+
+A = probability of "small"
+
+B = probability of "a"
+
+A|B = probability of "small" after "a"
+
+This part involves a little math using Bayes Theorem.
+
+A|B = (B|A*A)/B
+
+I am just playing around with probability and doing it by hand to analyze a corpus, and I am just trying to check whether I figured this properly as I check the probability of the occurrences of words after one another by hand doing good ol' fashion math instead of over relying on modules and libraries from R or Python just to ensure I grasp this concept.
+
+Calculating this by hand, I get
+
+count of "small" = 4
+
+count of "a" = 4
+
+A = 0.10810810810810811
+
+B = 0.10810810810810811
+
+count of "small" occurring after "a" = 3
+
+BA = 0.75
+
+probability of "small" occurring after "a" = 0.75
+*/
+
 
 import Foundation
 
